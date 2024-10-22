@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            padding: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hurrah WE USED DOM manipulation</h1>
+    <input onchange=" Nayeem('This is Nayeem')"type="text" name="" id=""><br><br>
+    <input onchange=" Nayeem2(this)"type="text" name="" id=""><br><br>
+    <input onchange=" nayeem1()"type="text" name="" id="catch">
+    <p onmouseover="nayeem3()" id="para1" onmouseout="ridoy()"></p><br><br>
+    <p onmosedown="nayeem4()" id="para2" onmouseup="ridoy2"></p><br><br>
+   <!-- <p onkeypress="nayeem5()" id="key1"></p>-->
+
+
+<input onkeypress="nayeem6()" type="text" name="" id="input2"><br><br>
+<input onkeydown="nayeem6()" type="text" name="" id="input3"><br><br>
+<input onkeyup="nayeem6()" type="text" name="" id="input4">
+
+
+    <script>
+        function Nayeem(hi){
+            console.log(hi)
+        }
+        function Nayeem2(hello){
+            console.log(hello)
+
+
+        }
+
+        function nayeem1(){
+            const input=document.getElementById('catch');
+            input.value=input.value.toUpperCase();
+
+            console.log(input.value);
+            
+        }
+        function nayeem3(){
+            const para= document.getElementById('para1')
+            para.innerText="mouse over hacche ekhan"
+        }
+        function ridoy(){
+            const para= document.getElementById('para1')
+            para.innerText="mouse out hacche"
+        }
+        function nayeem4(){
+            const para= document.getElementById('para2')
+            para.innerText="mouse down hacche"
+        }
+        function ridoy2(){
+            const para= document.getElementById('para2')
+            para.innerText="mouse up hacche"
+        }
+        function nayeem5(){
+            const para= document.getElementById('key1')
+            para.innerText="key koy"
+        }
+        
+        function nayeem6(){
+            const para= document.getElementById('input2');
+            input2.style.backgroundColor ='yellow';
+        }
+        function nayeem6(){
+            const para= document.getElementById('input3');
+            input3.style.backgroundColor ='yellow';
+        }
+        function nayeem6(){
+            const para= document.getElementById('input4');
+            input4.style.backgroundColor ='yellow';
+        }
+
+
+    </script>
+</body>
+</html>
